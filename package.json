@@ -1,0 +1,18 @@
+{
+  "name": "inm320-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "goserver": "lite-server --baseDir=\"public\"",
+    "goscss": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goscss\" \"npm run goserver\""
+  },
+  "author": "Cherry & Emma",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.2"
+  }
+}

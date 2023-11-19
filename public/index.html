@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>INM320 Bootstrap</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+    <!-- Notification Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Notification </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Maintenance Alert: Scheduled maintenance tomorrow at 2:00 PM UTC.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+         </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap Container -->
+    <div class="container-fluid">
+        <div class="row p-0">
+
+            <!-- Side Menu -->
+            <aside class="col-md-3 col-lg-2 p-0">
+                <div class="logo">
+                    <img class="logo-image" src="./assets/images/logo.png">
+                    <span class="sitename">Dashboard Kit</span>
+                    <a class="close" href="#"><i class="fa-solid fa-rectangle-xmark fa-xl"></i></a>
+                </div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <span>Overview</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-ticket"></i>
+                            <span>Tickets</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <span>Ideas</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-users"></i>
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-user-tie"></i>
+                            <span>Agents</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Articles</span>
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fa-solid fa-award"></i>
+                            <span>Subscription</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 p-0">
+
+                <!-- Header Section -->
+                <section id="header">
+                    <a class="openmenu" href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
+                    <h1 class="title">Overview</h1>
+                    <div class="quickmenu">
+                        <a href="#"><img class="search" alt="search" src="./assets/images/icon-search.png"></a>
+                        <a href="#"><img type="button" class="noti-new" data-bs-toggle="modal" data-bs-target="#exampleModal" alt="notification new" src="./assets/images/icon-notifications-new.png"></a>
+                    </div>
+                    <div class="account">
+                        <span class="name">Jones Ferdinand</span>
+                        <a href="#"><img class="avatar" src="./assets/images/avatar-man-header.png"></a>
+                    </div>
+                </section>
+
+                <!-- Cards Section -->
+                <section id="cards" class="row g-4">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Unresolved</h5>
+                                <p class="card-text">60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Overdue</h5>
+                                <p class="card-text">16</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Open</h5>
+                                <p class="card-text">43</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">On hold</h5>
+                                <p class="card-text">64</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Trends Section -->
+                <section id="trends">
+                    <div class="card">
+                        <div class="row g-0">
+                            <div class="grapharea col-md-12 col-lg-8">
+                                <h5 class="card-title">Today's trends</h5>
+                                <div class="day">
+                                    <span class="time">as of 25 May 2019, 09:41 PM</span>
+                                    <span class="today">Today</span>
+                                    <span class="yesterday">Yesterday</span>
+                                </div>
+                                <img class="graphimage" src="./assets/images/graph.png">
+                            </div>
+                            <div class="statarea col-md-12 col-lg-4 p-0">
+                                <div class="list">
+                                    <span class="list-text">Resolved</span>
+                                    <span class="list-number">449</span>
+                                </div>
+                                <div class="list">
+                                    <span class="list-text">Received</span>
+                                    <span class="list-number">426</span>
+                                </div>
+                                <div class="list">
+                                    <span class="list-text">Average first response time</span>
+                                    <span class="list-number">33m</span>
+                                </div>
+                                <div class="list">
+                                    <span class="list-text">Average response time</span>
+                                    <span class="list-number">3h 8m</span>
+                                </div>
+                                <div class="list">
+                                    <span class="list-text">Resolution within SLA</span>
+                                    <span class="list-number">94%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tickets and Tasks Section -->
+                <section id="tickets_tasks" class="row g-4">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card">
+                            <div class="titlearea">
+                                <h5 class="card-title">Unresolved tickets</h5>
+                                <a class="view" href="#">View details</a>
+                            </div>
+                            <div class="subtext">
+                                <span>Group: </span><span>Support</span>
+                            </div>
+                            <div class="list">
+                                <span class="list-text">Waiting on Feature Request</span>
+                                <span class="list-number">4238</span>
+                            </div>
+                            <div class="list">
+                                <span class="list-text">Awaiting Customer Response</span>
+                                <span class="list-number">1005</span>
+                            </div>
+                            <div class="list">
+                                <span class="list-text">Awaiting Developer Fix</span>
+                                <span class="list-number">914</span>
+                            </div>
+                            <div class="list">
+                                <span class="list-text">Pending</span>
+                                <span class="list-number">281</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <div class="card">
+                            <div>
+                                <div class="titlearea">
+                                    <h5 class="card-title">Tasks</h5>
+                                    <a class="view" href="#">View all</a>
+                                </div>
+                            </div>
+                            <div class="subtext">
+                                <span>Today</span>
+                            </div>
+                            <div class="list">
+                                <span class="list-text create-text">Create new task</span>
+                                <img class="create" src="./assets/images/icon-create-inactive.png">
+                            </div>
+                            <div class="list">
+                                <img class="check" src="./assets/images/controls-checkbox-inactive.png">
+                                <span class="list-text">Finish ticket update</span>
+                                <span class="badge-urgent">URGENT</span>
+                            </div>
+                            <div class="list">
+                                <img class="check" src="./assets/images/controls-checkbox-inactive.png">
+                                <span class="list-text">Create new ticket example</span>
+                                <span class="badge-new">NEW</span>
+                            </div>
+                            <div class="list">
+                                <img class="check" src="./assets/images/controls-checkbox-active.png">
+                                <span class="list-text">Update ticket report</span>
+                                <span class="badge-disabled">DEFAULT</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
